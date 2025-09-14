@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Company Analysis - Vector Intelligence Platform</title>
+    <meta name="description" content="Comprehensive business assessment of 655 Turkish companies using Vector Framework methodology with 1,208 benchmark metrics.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="platform-title">Turkish Company Analysis Platform</h1>
+                <p class="platform-subtitle">Vector Framework Assessment • 655 Companies Database</p>
+                <div class="data-sources">
+                    <span class="source-badge">KAP</span>
+                    <span class="source-badge">BIST</span>
+                    <span class="source-badge">Trade Registry</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Key Metrics Dashboard -->
+            <section class="metrics-dashboard">
+                <div class="metric-card">
+                    <div class="metric-icon">🏢</div>
+                    <div class="metric-value" id="total-companies">655</div>
+                    <div class="metric-label">Turkish Companies</div>
+                    <div class="metric-sublabel">Public Financial Data</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-value" id="avg-alpha">36.1%</div>
+                    <div class="metric-label">Avg Alpha Opportunity</div>
+                    <div class="metric-sublabel">Value Creation Potential</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">💰</div>
+                    <div class="metric-value" id="total-revenue">$771.0B</div>
+                    <div class="metric-label">Total Revenue</div>
+                    <div class="metric-sublabel">Combined Market Size</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-value" id="total-employees">5.5M</div>
+                    <div class="metric-label">Total Employees</div>
+                    <div class="metric-sublabel">Workforce Impact</div>
+                </div>
+            </section>
+
+            <!-- Data Sources & Methodology -->
+            <section class="methodology-section">
+                <h2>Data Sources & Methodology</h2>
+                <div class="methodology-grid">
+                    <div class="methodology-card">
+                        <h3>Primary Data Sources</h3>
+                        <ul>
+                            <li>• KAP (Public Disclosure Platform ) - Listed companies</li>
+                            <li>• BIST (Borsa Istanbul) - Stock exchange data</li>
+                            <li>• Turkish Trade Registry - Private companies</li>
+                            <li>• Chamber of Commerce databases</li>
+                        </ul>
+                    </div>
+                    <div class="methodology-card">
+                        <h3>Assessment Framework</h3>
+                        <ul>
+                            <li>• Vector Framework with 1,208 benchmark metrics</li>
+                            <li>• Industry-specific performance multipliers</li>
+                            <li>• Turkish market calibration factors</li>
+                            <li>• Alpha opportunity quantification</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search and Filters -->
+            <section class="search-section">
+                <div class="search-controls">
+                    <input type="text" id="search-input" placeholder="Search companies, tickers, or cities..." class="search-input">
+                    <select id="industry-filter" class="filter-select">
+                        <option value="">All Industries</option>
+                        <option value="automotive">Automotive & Manufacturing</option>
+                        <option value="retail">Retail & Consumer Goods</option>
+                        <option value="technology">Technology & Digital Services</option>
+                        <option value="textile">Textile & Apparel</option>
+                        <option value="food">Food & Beverage</option>
+                        <option value="logistics">Logistics & Transportation</option>
+                        <option value="financial">Financial Services</option>
+                        <option value="energy">Energy & Utilities</option>
+                        <option value="construction">Construction & Infrastructure</option>
+                        <option value="agriculture">Agriculture & Food Processing</option>
+                        <option value="healthcare">Healthcare & Life Sciences</option>
+                        <option value="tourism">Tourism & Hospitality</option>
+                    </select>
+                    <select id="priority-filter" class="filter-select">
+                        <option value="">All Priorities</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                    </select>
+                </div>
+                <div class="results-count">
+                    <span id="results-count">Loading companies...</span>
+                </div>
+            </section>
+
+            <!-- Company Results Table -->
+            <section class="results-section">
+                <div class="table-container">
+                    <table class="companies-table" id="companies-table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Industry</th>
+                                <th>Revenue</th>
+                                <th>Score</th>
+                                <th>Alpha</th>
+                                <th>Priority</th>
+                                <th>Source</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="companies-tbody">
+                            <!-- Companies will be loaded here via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="loading-indicator" id="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Loading comprehensive database...</p>
+                </div>
+            </section>
+
+            <!-- Export Tools -->
+            <section class="export-section">
+                <h2>Export & Analysis Tools</h2>
+                <div class="export-grid">
+                    <button class="export-btn primary" onclick="exportDatabase()">
+                        📊 Export Full Database (CSV)
+                    </button>
+                    <button class="export-btn secondary" onclick="generateExecutiveReport()">
+                        📄 Generate Executive Report
+                    </button>
+                    <button class="export-btn secondary" onclick="createOutreachCampaign()">
+                        🎯 Create Outreach Campaign
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vector Intelligence Platform. Turkish market analysis with international collaboration.</p>
+            <p>Data sources: KAP, BIST, Turkish Trade Registry, Chamber of Commerce</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
